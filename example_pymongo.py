@@ -1,7 +1,7 @@
 import pymongo
 from pymongo import MongoClient
 import os
-from urllib.parse import quote_plus
+import pprint
 
 uri = "mongodb://{}:{}@{}".format(
     os.getenv("ME_CONFIG_MONGODB_ADMINUSERNAME"),
@@ -35,3 +35,6 @@ test_item = {"name": "Maksym",
 
 item_id = collection.insert_one(test_item).inserted_id
 print(item_id)
+
+
+pprint.pprint(collection.find_one({"name": "Maksym"}))
