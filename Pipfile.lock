@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c5adc4b05ed4e4d226fe8cd83f2eb6a2f6c5a28dc373ba24e074592ea2ee332d"
+            "sha256": "e2abb61df3855c8479b770170b102bbba2cf8967ccb1fbbbd592c08f3ed61e6b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -50,6 +50,14 @@
             ],
             "version": "==1.0"
         },
+        "mongoengine": {
+            "hashes": [
+                "sha256:1823c17d059779deb0c5e1f8a7fb02f797e676dd0af6275cd860dddca607beca",
+                "sha256:2ecc60f50d9f85d4ae7e2e8bd1dc19778af65d2883d5ad6d658d77f1560059d3"
+            ],
+            "index": "pypi",
+            "version": "==0.15.3"
+        },
         "pymongo": {
             "hashes": [
                 "sha256:08dea6dbff33363419af7af3bf2e9a373ff71eb22833dd7063f9b953f09a0bdf",
@@ -85,6 +93,13 @@
             ],
             "index": "pypi",
             "version": "==3.7.1"
+        },
+        "six": {
+            "hashes": [
+                "sha256:70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9",
+                "sha256:832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"
+            ],
+            "version": "==1.11.0"
         },
         "werkzeug": {
             "hashes": [
