@@ -1,11 +1,13 @@
 from uboto3 import UBoto3
 from pymongo import MongoClient
+import click
 import os
 import json
 import pprint
 
 
-if __name__ == "__main__":
+@click.command()
+def create_db():
 
     uri = "mongodb://{}:{}@{}".format(
         os.getenv("ME_CONFIG_MONGODB_ADMINUSERNAME"),
@@ -20,13 +22,15 @@ if __name__ == "__main__":
 
     keys = s3.list_keys(Prefix='events')
 
-    pprint.pprint(s3.get_object(keys[0]))
-
     for k in keys:
-        pprint.pprint(k)
         obj = s3.get_object(k)
         if not collection.find_one({'slug': obj['slug']}):
             collection.insert_one(obj)
-            pprint.pprint("added {}".format(k))
+            click.echo("added {}".format(k))
         else:
-            pprint.pprint("key {} already exist".format(k))
+            click.echo("key {} already exist".format(k))
+
+
+if __name__ == '__main__':
+
+    create_db()

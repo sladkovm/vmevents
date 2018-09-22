@@ -22,12 +22,17 @@ def index():
     return "Hello!"
 
 
-@app.route('/test')
+@app.route('/events')
 def test():
 
-    doc = mongo.test_database.test_collections.find_one()
-    doc.pop("_id")
-    return jsonify(doc)
+    db = mongo.velometria
+    docs = db.events.find()
+    rv = []
+    for d in docs:
+        d.pop('_id')
+        rv.append(d)
+    return jsonify(rv)
+    
 
 if __name__ == "__main__":
 
