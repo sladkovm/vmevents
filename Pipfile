@@ -8,6 +8,7 @@ flask = "*"
 pymongo = "*"
 "boto3" = "*"
 click = "*"
+flask-wtf = "*"
 
 [dev-packages]
 
