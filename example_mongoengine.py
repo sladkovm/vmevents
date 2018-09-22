@@ -2,6 +2,8 @@ from mongoengine import connect, Document, StringField
 import os
 
 
+# suffix /?authSource=admin will be needed to get connected
+
 uri = "mongodb://{}:{}@{}/?authSource=admin".format(
     os.getenv("ME_CONFIG_MONGODB_ADMINUSERNAME"),
     os.getenv("ME_CONFIG_MONGODB_ADMINPASSWORD"),
