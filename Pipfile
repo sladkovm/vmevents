@@ -6,7 +6,6 @@ verify_ssl = true
 [packages]
 flask = "*"
 pymongo = "*"
-mongoengine = "*"
 
 [dev-packages]
 

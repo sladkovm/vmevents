@@ -11,7 +11,9 @@ uri = "mongodb://{}:{}@{}".format(
     os.getenv("ME_CONFIG_MONGODB_ADMINUSERNAME"),
     os.getenv("ME_CONFIG_MONGODB_ADMINPASSWORD"),
     os.getenv("MONGODB_URL"))
-client = MongoClient(uri)
+
+
+mongo = MongoClient(uri)
 
 
 # View the MongoDB content using Flask views
@@ -22,9 +24,8 @@ def index():
 
 @app.route('/test')
 def test():
-    db = client.test_database
-    collection = db.test_collections
-    doc = collection.find_one()
+
+    doc = mongo.test_database.test_collections.find_one()
     doc.pop("_id")
     return jsonify(doc)
 
