@@ -4,6 +4,8 @@ import json
 
 
 class UBoto3():
+    """S3 Interface that hides away settings details
+    by reading them from the environment variables"""
 
     region_name = os.getenv('DO_SPACES_REGION')
     endpoint_url = 'https://{}.digitaloceanspaces.com'.format(os.getenv('DO_SPACES_REGION'))
@@ -14,10 +16,10 @@ class UBoto3():
     def __init__(self):
 
         self.client = boto3.client('s3',
-                              region_name=self.region_name,
-                              endpoint_url=self.endpoint_url,
-                              aws_access_key_id=self.aws_access_key_id,
-                              aws_secret_access_key=self.aws_secret_access_key)
+                                   region_name=self.region_name,
+                                   endpoint_url=self.endpoint_url,
+                                   aws_access_key_id=self.aws_access_key_id,
+                                   aws_secret_access_key=self.aws_secret_access_key)
 
     def list_objects(self, **kwargs):
         """List of object found in the bucket
