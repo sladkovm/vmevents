@@ -1,10 +1,32 @@
-from flask import Flask
+from flask import Flask, jsonify
+from pymongo import MongoClient
+import os
+import json
 
+# Create Flask app
 app = Flask(__name__)
 
+# Connect to MongoDB
+uri = "mongodb://{}:{}@{}".format(
+    os.getenv("ME_CONFIG_MONGODB_ADMINUSERNAME"),
+    os.getenv("ME_CONFIG_MONGODB_ADMINPASSWORD"),
+    os.getenv("MONGODB_URL"))
+client = MongoClient(uri)
+
+
+# View the MongoDB content using Flask views
 @app.route('/')
 def index():
     return "Hello!"
+
+
+@app.route('/test')
+def test():
+    db = client.test_database
+    collection = db.test_collections
+    doc = collection.find_one()
+    doc.pop("_id")
+    return jsonify(doc)
 
 if __name__ == "__main__":
 
