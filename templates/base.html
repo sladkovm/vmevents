@@ -1,0 +1,23 @@
+{# This is templates/base.html template #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}VM Events{% endblock %}</title>
+</head>
+<body>
+
+    {% block nav %}
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/api">API</a></li>
+        </ul>
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+</html>

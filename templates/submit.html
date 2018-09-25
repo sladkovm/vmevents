@@ -1,5 +1,17 @@
-<form method="POST" action="/">
-    {{ form.csrf_token }}
-    {{ form.name.label }} {{ form.name(size=20) }}
-    <input type="submit" value="Go">
-</form>
+{# this is templates/child.html template #}
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+        <p class="alert alert-warning {{ category }}">{{ message }}</p>
+    {% endfor %}
+
+    <form method="POST" action="">
+        {{ form.csrf_token }}
+        <p>{{ form.name.label }} {{ form.name(size=20) }}</p>
+        <p>{{ form.location.label }} {{ form.location(size=20) }}</p>
+        <p>{{ form.submit }}</p>
+    </form>
+
+{% endblock %}
