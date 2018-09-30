@@ -43,3 +43,14 @@ class UBoto3():
         r = self.client.get_object(Bucket=self.bucket, Key=Key, **kwargs)
 
         return json.loads(r['Body'].read().decode('utf-8'))
+
+    def upload_json(self, f_name, **kwargs):
+        """Upload json file to the S3 bucket"""
+        _prefix = kwargs.get('Prefix', None)
+        _key = kwargs.get('Key', os.path.basename(f_name))
+        if _prefix:
+            _key = _prefix + '/' + _key
+        with open(f_name, 'rb') as f:
+            self.client.upload_fileobj(f, Bucket=self.bucket, Key=_key)
+
+        return _key
