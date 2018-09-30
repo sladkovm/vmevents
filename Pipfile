@@ -9,6 +9,7 @@ pymongo = "*"
 "boto3" = "*"
 click = "*"
 flask-wtf = "*"
+"flask-bootstrap4" = "*"
 
 [dev-packages]
 

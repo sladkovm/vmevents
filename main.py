@@ -1,15 +1,27 @@
-from flask import Flask, jsonify, redirect, render_template, flash, url_for, request
+from flask import (Flask, jsonify, redirect,
+                   render_template, flash, url_for)
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, DateField
 from wtforms.validators import DataRequired
+from flask_bootstrap import Bootstrap
 from pymongo import MongoClient
 import os
+from datetime import date
 
 
 class MyForm(FlaskForm):
     name = StringField('name', validators=[DataRequired()])
-    date = DateField(label='date', format="%m/%d/%Y", validators=[DataRequired()])
+    short_name = StringField('short_name', validators=[DataRequired()])
+    date = DateField(label='date',
+                     format="%d-%m-%Y",
+                     default=date.today(),
+                     validators=[DataRequired()])
     location = StringField('location', validators=[DataRequired()])
+    country = StringField('country', validators=[DataRequired()])
+    distance = StringField('distance')
+    elevation = StringField('elevation')
+    url = StringField('url')
+
     submit = SubmitField('Submit')
 
 #
@@ -44,6 +56,8 @@ app.config.update(dict(
     WTF_CSRF_SECRET_KEY="a csrf secret key"
 ))
 
+Bootstrap(app)
+
 # Connect to MongoDB
 uri = "mongodb://{}:{}@{}".format(
     os.getenv("ME_CONFIG_MONGODB_ADMINUSERNAME"),
@@ -68,7 +82,7 @@ def submit():
     if form.validate_on_submit():
         flash('Post: Submitted!', 'success')
 
-        return redirect('/submit')
+        return redirect(url_for('submit'))
     else:
 
         flash('Get: Not all fields are filled', 'error')
