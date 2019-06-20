@@ -1,0 +1,20 @@
+{
+     "name": "UCI Granfondo Frank Schleck 2017",
+     "short_name": "Granfondo Schleck 2017",
+     "slug": "uci-gf-schleck-2017",
+     "edition_year": "2017",
+     "date": "2017-05-20",
+     "location": "Mondorf-les-Bains",
+     "country": "Luxembourg",
+     "distance": 162,
+     "elevation": 2100,
+     "url": "https://schleckgranfondo.com/",
+     "results_url": [
+         "https://schleckgranfondo.com/"
+     ],
+     "keywords": [
+         "schleck", "UCI", "GF", "Granfondo", "Gran", "Fondo"
+     ],
+     "organizer": "UCI Gran Fondo World Series",
+     "time_keeper": "Datasport"
+}

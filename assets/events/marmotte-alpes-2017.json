@@ -1,0 +1,20 @@
+{
+     "name": "Look Marmotte Granfondo Alpes 2017",
+     "short_name": "Marmotte Alpes 2017",
+     "slug": "marmotte-alpes-2017",
+     "edition_year": "2017",
+     "date": "2017-07-02",
+     "location": "Le bourg d'oisans",
+     "country": "France",
+     "distance": 174,
+     "elevation": 5000,
+     "url": "http://www.marmottegranfondoseries.com/",
+     "results_url": [
+         "http://www.marmottegranfondoseries.com/resultats_csv.php?classement_id=TOTAL&annee_id=2017&parcours_id=1"
+     ],
+     "keywords": [
+         "marmotte", "alpes", "la marmotte"
+     ],
+     "organizer": "Marmotte Granfondo Series",
+     "time_keeper": "Marmotte Granfondo Series"
+}

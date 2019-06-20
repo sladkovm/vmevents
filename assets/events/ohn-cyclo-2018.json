@@ -1,0 +1,16 @@
+{
+     "name": "Omloop Het Niewsblaad Cyclo 2018",
+     "short_name": "OHN Cyclo 2018",
+     "slug": "ohn-cyclo-2018",
+     "edition_year": "2018",
+     "date": "2018-02-25",
+     "location": "Gent",
+     "country": "Belgium",
+     "distance": 128,
+     "elevation": 966,
+     "url": "http://www.sport.be/omloophetnieuwsblad/2018/nl/",
+     "results_url": [],
+     "activity_ids": [1425667404],
+     "keywords": ["OHN", "Omloop Het Niewsblaad"],
+     "organizer": "Ettix Classics Tour"
+}

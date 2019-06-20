@@ -1,0 +1,17 @@
+{
+     "name": "UCI Granfondo World Championship Albi 2017",
+     "short_name": "UCI GF WC Albi 2017",
+     "slug": "uci-gf-wc-albi-2017",
+     "edition_year": "2017",
+     "date": "2017-08-27",
+     "location": "Albi",
+     "country": "France",
+     "distance": 155,
+     "elevation": 1800,
+     "url": "http://www.marmottegranfondoseries.com/",
+     "results_url": [],
+     "keywords": [
+          "albi", "UCI", "GF", "Granfondo", "Gran", "Fondo"
+     ],
+     "organizer": "UCI Gran Fondo World Series"
+}

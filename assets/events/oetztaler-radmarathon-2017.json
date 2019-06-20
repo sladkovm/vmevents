@@ -1,0 +1,20 @@
+{
+     "name": "Oetztaler Radmarathon 2017",
+     "short_name": "Oetztaler 2017",
+     "slug": "oetztaler-radmarathon-2017",
+     "edition_year": "2017",
+     "date": "2017-08-27",
+     "location": "Sölden",
+     "country": "Austria",
+     "distance": 230,
+     "elevation": 4800,
+     "url": "https://www.oetztaler-radmarathon.com/en",
+     "results_url": [
+         "https://services.datasport.com/2017/velo/oetztaler/"
+     ],
+     "keywords": [
+         "ötztaler", "oetztaler", "otztaler", "ötztal", "oetztal", "otztal", "ötzi", "oetzi", "otzi", "örm", "ORM", "solden"
+     ],
+     "organizer": "Oetztaler Solden",
+     "time_keeper": "Datasport"
+}

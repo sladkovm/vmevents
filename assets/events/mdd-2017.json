@@ -1,0 +1,20 @@
+{
+     "name": "Maratona Dles Dolomites 2017",
+     "short_name": "MDD 2017",
+     "slug": "mdd-2017",
+     "edition_year": "2017",
+     "date": "2017-07-02",
+     "location": "Badia",
+     "country": "Italy",
+     "distance": 138,
+     "elevation": 4230,
+     "url": "http://www.maratona.it/",
+     "results_url": [
+         "http://www.grandtrophee.fr/resultats_csv.php?classement_id=TOTAL&annee_id=2017&parcours_id=22"
+     ],
+     "keywords": [
+         "mdd", "maratona", "maratona dolomites", "maratona dles dolomites"
+     ],
+     "organizer": "MDD",
+     "time_keeper": "Datasport"
+}

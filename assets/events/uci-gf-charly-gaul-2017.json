@@ -1,0 +1,20 @@
+{
+     "name": "UCI Granfondo La Leggendaria Charly Gaul 2017",
+     "short_name": "La Leggendaria Charly Gaul 2017",
+     "slug": "uci-gf-charly-gaul-2017",
+     "edition_year": "2017",
+     "date": "2017-07-09",
+     "location": "Trento",
+     "country": "Italy",
+     "distance": 141,
+     "elevation": 3700,
+     "url": "https://www.laleggendariacharlygaul.it/",
+     "results_url": [
+         "https://www.laleggendariacharlygaul.it/"
+     ],
+     "keywords": [
+         "La Leggendaria", "Charly Gaul", "UCI", "GF", "Granfondo", "Gran", "Fondo"
+     ],
+     "organizer": "UCI Gran Fondo World Series",
+     "time_keeper": "MySdam"
+}

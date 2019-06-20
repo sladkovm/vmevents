@@ -1,0 +1,20 @@
+{
+     "name": "Ridley Les 3 Ballons 2017",
+     "short_name": "Les 3 Ballons 2017",
+     "slug": "les-3-ballons-2017",
+     "edition_year": "2017",
+     "date": "2017-06-10",
+     "location": "Luxeuil-les-Bains",
+     "country": "France",
+     "distance": 210,
+     "elevation": 4400,
+     "url": "http://www.grandtrophee.fr/",
+     "results_url": [
+         "http://www.grandtrophee.fr/resultats_csv.php?classement_id=TOTAL&annee_id=2017&parcours_id=22"
+     ],
+     "keywords": [
+         "ballons"
+     ],
+     "organizer": "Cycling Classics France",
+     "time_keeper": "Cycling Classics France"
+}

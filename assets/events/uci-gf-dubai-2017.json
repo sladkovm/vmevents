@@ -1,0 +1,17 @@
+{
+     "name": "UCI Granfondo Dubai First 2017",
+     "short_name": "UCI GF Dubai 2017",
+     "slug": "uci-gf-dubai-2017",
+     "edition_year": "2017",
+     "date": "2017-12-15",
+     "location": "Dubai",
+     "country": "UAE",
+     "distance": 92,
+     "elevation": 330,
+     "url": "http://cyclechallenge.ae/",
+     "results_url": [],
+     "keywords": [
+          "dubai", "UCI", "GF", "Granfondo", "Cycle", "challenge", "First", "Spinney"
+     ],
+     "organizer": "UCI Gran Fondo World Series"
+}
