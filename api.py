@@ -5,10 +5,10 @@ from loguru import logger
 
 api = responder.API()
 
-@api.route("/hallo")
-def greet_world(req, resp):
+@api.route("/hello")
+def hello(req, resp):
     logger.debug('vmevents')
-    resp.text = "event api"
+    resp.text = "hello"
 
 
 @api.route("/events/")
