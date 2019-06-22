@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1425121012,
+    "athlete_ftp": 260,
+    "athlete_weight": 78.0,
+    "relative_intensity": 83,
+    "training_load": 331,
+    "max_watts": 720,
+    "weighted_power": 217,
+    "elapsed_time": 17039,
+    "moving_time": 17039,
+    "nwpk": 2.7820512821,
+    "mwpk": 9.2307692308,
+    "ftppk": 3.3333333333
+  },
+  {
+    "id": 1425490086,
+    "athlete_ftp": 292,
+    "athlete_weight": 80.0,
+    "relative_intensity": 72,
+    "training_load": 259,
+    "max_watts": 2094,
+    "weighted_power": 210,
+    "elapsed_time": 17250,
+    "moving_time": 17250,
+    "nwpk": 2.625,
+    "mwpk": 26.175,
+    "ftppk": 3.65
+  },
+  {
+    "id": 1425343668,
+    "athlete_ftp": 290,
+    "athlete_weight": 70.0,
+    "relative_intensity": 76,
+    "training_load": 311,
+    "max_watts": 760,
+    "weighted_power": 221,
+    "elapsed_time": 17974,
+    "moving_time": 17974,
+    "nwpk": 3.1571428571,
+    "mwpk": 10.8571428571,
+    "ftppk": 4.1428571429
+  },
+  {
+    "id": 1425245759,
+    "athlete_ftp": 165,
+    "athlete_weight": 82.0,
+    "relative_intensity": 112,
+    "training_load": 672,
+    "max_watts": 747,
+    "weighted_power": 185,
+    "elapsed_time": 18761,
+    "moving_time": 18761,
+    "nwpk": 2.256097561,
+    "mwpk": 9.1097560976,
+    "ftppk": 2.012195122
+  }
+]
