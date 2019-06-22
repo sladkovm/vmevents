@@ -10,6 +10,7 @@ pytest = "*"
 [packages]
 responder = "*"
 loguru = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.6"

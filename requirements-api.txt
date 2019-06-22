@@ -1,3 +1,4 @@
 responder
 loguru
 pytest
+pandas
