@@ -4,6 +4,7 @@ import json
 from loguru import logger
 import pandas as pd
 import numpy as np
+from predict import remove_outliers, ftppk_time_model, nwpk_time_model
 
 
 api = responder.API()
@@ -63,6 +64,32 @@ def results(req, resp, *, slug):
 
     resp.media = rv
 
+
+@api.route("/timepred/{slug}")
+def timepred(req, resp, *, slug):
+    logger.debug(slug)
+    params = req.params
+    logger.debug(params)
+    ftppk = params.get('ftppk', None)
+    if ftppk is None:
+        raise ValueError("ftppk is None")
+    logger.debug(ftppk)
+
+    path = os.path.normpath("assets/results")
+    f_name = os.path.join(path, f"{slug}.json")
+    logger.debug(f_name)
+
+    df = pd.read_json(f_name)
+
+    df = remove_outliers(df)
+    t = ftppk_time_model(df, ftppk)
+    nwpk = nwpk_time_model(df, t)
+
+    rv = {"time_s": t,
+          "nwpk": nwpk}
+
+    logger.debug(rv)
+    resp.media = rv
 
 
 if __name__ == '__main__':

@@ -2,3 +2,4 @@ responder
 loguru
 pytest
 pandas
+sklearn

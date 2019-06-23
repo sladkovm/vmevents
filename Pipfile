@@ -6,11 +6,13 @@ verify_ssl = true
 [dev-packages]
 pylint = "*"
 pytest = "*"
+ipython = "*"
 
 [packages]
 responder = "*"
 loguru = "*"
 pandas = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.6"

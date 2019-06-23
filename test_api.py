@@ -35,3 +35,12 @@ def test_results_slug(api):
     results = json.loads(r.text)
     assert results is not None
     assert isinstance(results, list)
+
+
+def test_predict_elapsed_time(api):
+    # r = api.requests.get("http://vmapi/v1.0/timepred/lbl-cyclo-2017", params={"ftppk": 300})
+    r = api.requests.get("http://vmevents/timepred/mdd-2017", params={"ftppk": 300})
+    assert r.text is not None
+    predict = json.loads(r.text)
+    assert predict is not None
+    assert isinstance(predict, dict)
